@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  scroll-snap-type: y mandatory;
+}
+div {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
 main {
   margin: 60px;
   margin-top: 100px;
@@ -208,16 +216,16 @@ footer {
   gap: 10px;
   background-color: hsl(192, 100%, 9%);
   padding: 100px;
-  
+
   margin-top: -140px;
   padding-top: 150px;
   z-index: -1;
   position: relative;
-  color: #fff ;
+  color: #fff;
   font-family: "OpenSans", sans-serif;
 }
 
-footer a{
+footer a {
   color: #fff !important;
   text-decoration: none;
 }
@@ -226,7 +234,7 @@ footer a{
   width: 30%;
 }
 
-.footer-logo{
+.footer-logo {
   padding-bottom: 50px;
 }
 .footer-two {
@@ -278,15 +286,14 @@ footer ul li {
   padding-bottom: 20px;
 }
 
-.footer-two, .footer-three, .footer-four{
+.footer-two,
+.footer-three,
+.footer-four {
   margin-top: 100px;
-
 }
 
-/* 
-@media screen and (max-width: 1650px) {
-
-  .header-two{
+@media screen and (max-width: 1440px) {
+  .header-two {
     flex-direction: column;
   }
   footer {
@@ -302,33 +309,74 @@ footer ul li {
   .your-users {
     flex-direction: column-reverse;
   }
- 
 
-.message{
-  width: 100%;
-}
-.mockup{
-  width: 100%;
-} 
-.grow-together-one{
-  width: 100%;
-}
-.grow-together-two{
-  width: 100%;
-}
-.flowing-conv-one {
+  .grow-together-one,
+  .flowing-conv-two,
+  .your-users-one {
+    padding-bottom: 80px;
+  }
+  .grow-together-one h1,
+  .flowing-conv-two h1,
+  .your-users-one h1 {
+    margin: auto;
+    text-align: center;
+  }
+
+  .message {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 50px;
+  }
+  .message button {
+    width: 65%;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .mockup {
+    width: 100%;
+  }
+  .grow-together-one {
+    width: 100%;
+  }
+  .grow-together-two {
+    width: 100%;
+  }
+  .flowing-conv-one {
     width: 100%;
   }
   .flowing-conv-two {
     width: 100%;
   }
 
-  .your-users-one{
+  .your-users-one {
     width: 100%;
   }
 
-  .your-users-two{
-    width:100%;
+  .your-users-two {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .get-started {
+    width: 100%;
+  }
+  .footer-two,
+  .footer-three {
+    margin-top: 0px;
   }
 
-} */
+  .footer-four {
+    width: 100%;
+   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-four, .footer-three, .footer-two, .footer-one {
+    width: 100%;
+    display: flexbox;
+
+  }
+}
