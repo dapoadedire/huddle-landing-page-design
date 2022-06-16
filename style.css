@@ -16,13 +16,28 @@ header {
   background-color: hsl(193, 100%, 96%);
 }
 
+.header-one {
+  margin: 50px 100px;
+}
 
+.header-one button {
+  background-color: white;
+  float: right;
+  margin-top: 10px;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
 .header-two {
   display: flex;
 }
 
 .message {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,41 +49,41 @@ header {
   font-weight: 700;
   margin-bottom: 20px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.message p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    color: #000;
-    margin-bottom: 30px;
+.message p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 30px;
 }
 
-.message button{
-    background:hsl(322, 100%, 66%);
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    width: 40%;
+.message button {
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 40%;
 }
 
 .mockup {
-  width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 60px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
 }
-.mockup img{
-    width: 100%;
-    height: auto;
+.mockup img {
+  width: 100%;
+  height: auto;
 }
 
 section {
@@ -114,6 +129,7 @@ section {
   border: 2px solid transparent;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  margin-bottom: 150px;
 }
 
 .your-users-one {
@@ -156,13 +172,52 @@ section {
   font-weight: 700;
 }
 
+.get-started {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 50px 0px;
+  background-color: white;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.get-started h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.get-started button {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 40%;
+}
 footer {
   display: flex;
-  background-color: blue;
+  background-color: hsl(192, 100%, 9%);
+  padding: 100px;
+  margin-top: -140px;
+  padding-top: 150px;
+  z-index: -1;
+  position: relative;
+  color: #fff;
+  font-family: "OpenSans", sans-serif;
 }
 
 .footer-one {
-  width: 25%;
+  width: 30%;
 }
 
 .footer-two {
@@ -172,18 +227,53 @@ footer {
   width: 25%;
 }
 .footer-four {
-  width: 25%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-four i{
-    color: white;
+.footer-four i {
+  color: white;
+}
+
+.footer-four ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 70px;
+}
+
+.footer-four ul li a {
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid white;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 footer ul li {
   list-style: none;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 1440px) {
+.footer-one p img {
+  /* width: 20px;
+  height: 20px;
+  height: auto; */
+  margin: auto;
+  margin-right: 15px;
+}
+.footer-one p {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* 
+@media screen and (max-width: 1650px) {
+
+  .header-two{
+    flex-direction: column;
+  }
   footer {
     flex-direction: column;
   }
@@ -197,4 +287,33 @@ footer ul li {
   .your-users {
     flex-direction: column-reverse;
   }
+ 
+
+.message{
+  width: 100%;
 }
+.mockup{
+  width: 100%;
+} 
+.grow-together-one{
+  width: 100%;
+}
+.grow-together-two{
+  width: 100%;
+}
+.flowing-conv-one {
+    width: 100%;
+  }
+  .flowing-conv-two {
+    width: 100%;
+  }
+
+  .your-users-one{
+    width: 100%;
+  }
+
+  .your-users-two{
+    width:100%;
+  }
+
+} */
