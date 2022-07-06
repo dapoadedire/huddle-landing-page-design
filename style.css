@@ -293,6 +293,10 @@ footer ul li {
 }
 
 @media screen and (max-width: 1440px) {
+
+  .header-one {
+    margin: 40px 15px;
+}
   .header-two {
     flex-direction: column;
   }
@@ -315,12 +319,12 @@ footer ul li {
   .your-users-one {
     padding-bottom: 80px;
   }
-  .grow-together-one h1,
+  /* .grow-together-one h1,
   .flowing-conv-two h1,
   .your-users-one h1 {
     margin: auto;
     text-align: center;
-  }
+  } */
 
   .message {
     width: 100%;
@@ -363,6 +367,10 @@ footer ul li {
   .get-started {
     width: 100%;
   }
+
+  .get-started button {
+    width: 60%;
+  }
   .footer-two,
   .footer-three {
     margin-top: 0px;
@@ -379,4 +387,64 @@ footer ul li {
     display: flexbox;
 
   }
+  .grow-together-two img,
+.flowing-conv-one img,
+.your-users-two img {
+  padding: 20px;
+}
+}
+
+
+
+@media all and (max-width: 480px){
+  .header-one button{
+  padding: 12px 20px;}
+
+  .header-one label{
+    width: 60%;
+  }
+  .get-started h2 {
+    font-size: 1.3em;
+  }
+
+  .get-started button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+  .message h1{
+    font-size: 1.5em;
+  }
+  .message p{
+    font-size: 1.2em;
+  }
+
+  .message button{
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+  .footer-two, .footer-three, .footer-four {
+    margin-top: 20px;
+}
+
+.footer-four p{
+  margin-top: 0%;
+  padding-top: 0%;
+}
+.footer-four ul{
+  margin-bottom: 0%;
+}
+
+.grow-together-one h1, .flowing-conv-two h1, .your-users-one h1 {
+  font-size: 1.5em;
+}
+
+.grow-together-one p, .flowing-conv-two p, .your-users-one p {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin: auto !important;
+  left: 20px;
+}
+
+  
 }
